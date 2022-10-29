@@ -1,0 +1,168 @@
+@media screen and (max-width:800px) {
+     /*Img header*/
+     .img-header .header-info h2{
+        font-size: 3rem;
+     }
+ 
+     .img-header .header-info hr{
+         width: 340px;
+      }
+      .img-header .header-info p{
+         font-size: 14px;
+      }
+      /* Nav*/
+      @media screen and (max-width:960px){
+        .navBar__container{
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            z-index: 1;
+            width: 100%;
+            max-width: 1300px;
+            padding: 0;
+    
+        }
+        .navbar__menu{
+            display: grid;
+            grid-template-columns: auto;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top:-1000px;
+            opacity: 1;
+            transition: all 0.8s ease;
+            z-index: -1;
+        
+            
+    
+        }
+    
+        .navbar__menu.active{
+            background: #ebebeb;
+            top: 100%;
+            opacity: 1;
+            transition: all .8 ease;
+            z-index: 99;
+            height: 60vh;
+            font-size: 1.6;
+            
+        }
+        #navBar__logo{
+            padding-left: 25px;
+        }
+    
+        .navBar__toggle .bar{
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all .5s ease-in-out;
+            background: rgb(0, 0, 0);
+        }
+        .navbar__item{
+            width: 100%;
+        }
+        .navbar__links{
+            text-align: center;
+            padding: 2em;
+            width: 100%;
+            display: table;
+        }
+        .navbar__btn{
+            padding-bottom: 2em;
+        }
+        .btn-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            height: 70px;
+            margin: 0;
+        }
+    
+        #mobile-menu{
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            transform: translate(5%,20%);
+        }
+    
+        .navBar__toggle .bar{
+            display: block;
+            cursor: pointer;
+        }
+        #mobile-menu.is-active .bar:nth-child(2){
+            opacity: 0;
+        }
+        #mobile-menu.is-active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        #mobile-menu.is-active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+    }
+      
+    
+    /*Mision*/
+    .mission-info h2{
+        font-size: 30px;
+    }
+    .mission-info p{
+        font-size: 17px;
+    }
+    .mission-info .spacey-img{ 
+        width: 100%;
+    }
+    .mission-info .spacey-img img{
+        width: 100%;
+        height: 380px;
+        transform:none;
+    }
+
+    /*Elon musk*/
+    .elon-musk .figure-img{
+        height: 80vh;
+       
+    }
+    .elon-musk .figure-img h4{
+        font-size: 2em;
+
+    }
+
+
+    .gallery-section{
+        margin: 30px 0;
+    }
+      /*GALERIA*/
+      .gallery-container{
+        
+        grid-template-columns: 1fr; 
+    }
+    /*GO TOP*/
+    .go-top {
+        
+        bottom: 70px;
+        right: 10px;
+        width:22px;
+        height: 22px;
+        border: 2px solid #000;
+        
+    }
+    .go-top span i{
+        font-size: 15px; 
+    }
+    /*FOOTER*/
+
+    #footer{
+        justify-content: space-between;
+    }
+    #footer p{
+        font-size: 10px;
+        padding-left: 4px;
+
+    }
+    .redes a{
+        font-size: 13px;
+       
+    }
+}
